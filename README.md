@@ -77,7 +77,7 @@ npm install && npm start
 
 ## Creators
 
-**John Travis Lindsey**
+**J Travis Lindsey**
 
 * <a href="http://jtlindsey.com/" target="_blank">jtlindsey.com</a>
 * <a href="https://github.com/jtlindsey" target="_blank">github.com/jtlindsey</a>
