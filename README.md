@@ -64,7 +64,7 @@ You can compile and run this application on Windows, OSX or Linux. However, it w
 ```bash
 # 1. Update your Raspbian Software
 $ sudo apt-get update && sudo apt-get dist-upgrade
-# 2. Install nodejs (ARM version) on your Raspberry Pi
+# 2. Install nodejs (With support for ARM processors) on your Raspberry Pi
 $ curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - 
 $ sudo apt-get install -y nodejs  
 # 3. Clone this repository
