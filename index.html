@@ -14,21 +14,46 @@
 
   <div class="container">
     <div class="clock-background">
-    <div id="digital-clock">
-      <div id="digital-clock-time"></div>
-      <div id="digital-clock-am-pm"></div>
-    </div>
-      
-      <i class="fa fa-bell" aria-hidden="true"></i>
+
+      <div id="audio-status">
+        <div id="audio-status-left">
+          Snooze: Off , Sleep: On-54min ,
+        </div>
+
+        <div id="audio-status-right">
+          'Make a Move' by: Seater Beats......(scrolling)
+        </div>
+      </div>
+
+      <div class="main" id="digital-clock">
+        <div id="digital-clock-time"></div>
+        <div id="digital-clock-am-pm"></div>
+      </div>      
+
+      <div class="main" id="settings" style="display: none;">
+        <button type="button" id="alarm1">Alarm1</button>
+        <button type="button" id="alarm2">Alarm2</button>
+        <button type="button" id="done">done</button>
+      </div> 
+
+      <div id="alarm1-status">
+        <i class="fa fa-bell" aria-hidden="true"></i>
+      </div>
+
+      <div id="alarm2-status">
+        
+      </div>
 
       <div id="buttons">
-         <button type="button" id="btn1">Blue</button> 
-         <button type="button" id="btn2">Silver</button> 
-         <button type="button" id="btn3">Green</button>
-         <button type="button" id="btn4">Red</button>
-         <button type="button" id="my-file">JSON color</button> 
-         <button type="button" id="save">Save</button> 
+        <button type="button" id="alm-status">Alarm Status</button>
+        <button type="button" id="btn1">Blue</button> 
+        <button type="button" id="btn2">Silver</button> 
+        <button type="button" id="btn3">Green</button>
+        <button type="button" id="btn4">Red</button>
+        <button type="button" id="up-vol">Vol +</button>
+        <button type="button" id="down-vol">Vol -</button>
       </div>
+
     </div>
   </div>
   <!-- <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script> -->

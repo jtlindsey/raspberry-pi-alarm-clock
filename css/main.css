@@ -1,5 +1,6 @@
 body {
   background-color: gray;
+  color: white;
 } 
 .container {
 /* Center in window */
@@ -18,7 +19,7 @@ body {
   width: 580px;
   height: 320px;
   border-radius: 15px;
-  padding: 10px;
+  padding: 5px;
 }
 
 /*font awesome*/
@@ -26,16 +27,80 @@ body {
   color: red;
 }
 
+.main {
+  height: 230px;
+}
+
 #digital-clock {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: #1e90ff;
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
 }
 #digital-clock-time {
-  display:inline;
-  font-size: 230px;
+  display: inline-block;
+  font-size: 190px;
 }
 #digital-clock-am-pm {
-  display:inline;
+  display: inline-block;
   font-size: 80px;
+  padding-right: 15px;
+}
+
+#buttons {
+  height: 20px;
+  border-style: solid;
+  border-color: green;
+  border-width: 1px;
+  line-height: 2px;
+  overflow:hidden;
+  text-align: center;
+}
+
+#audio-status {
+  height: 25px;
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
+  font-size: 14px;
+}
+
+#audio-status-left {
+  float:left;
+  height: 17px;
+  width: 40%;
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+  padding-left: 5px;
+}
+
+#audio-status-right {
+  float:left;
+  height: 17px;
+  width: 57%;
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+  padding-left: 5px;
+}
+
+#alarm1-status {
+  height: 20px;
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
+  font-size: 12px;
+}
+
+#alarm2-status {
+  height: 20px;
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
+  font-size: 12px;
 }

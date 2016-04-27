@@ -9,16 +9,22 @@ document.getElementById("btn3").onclick = function() {myDigitalClockColor("#0099
 // red
 document.getElementById("btn4").onclick = function() {myDigitalClockColor("#ff0000")};
 
-document.getElementById("my-file").onclick = function() {
-  myDigitalClockColor(mySettings.clockColor);
-};
-
-document.getElementById("save").onclick = function() {
-  saveSettings();
-};
-
 function myDigitalClockColor(color) {
   mySettings.clockColor = color;
   document.getElementById("digital-clock").style.color = color;
   saveSettings();
+};
+
+  
+document.getElementById("digital-clock").onclick = function() {changeDiv("digital-clock", "settings")};
+
+document.getElementById("done").onclick = function() {changeDiv("settings", "done")};
+
+function changeDiv(hideDivID, showDivID) {
+  $("#" + hideDivID).hide();
+  if (showDivID == "done") {
+    $("#digital-clock").show();
+  } else {
+    $("#" + showDivID).show();
+  }
 };
