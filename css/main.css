@@ -33,9 +33,9 @@ body {
 }
 #digital-clock-time {
   display:inline;
-  font-size: 12.0em;
+  font-size: 230px;
 }
 #digital-clock-am-pm {
   display:inline;
-  font-size: 4.0em;
+  font-size: 80px;
 }
