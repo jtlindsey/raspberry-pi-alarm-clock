@@ -1,0 +1,5 @@
+// Ignore garbage from OSX systems
+.DS_Store
+
+// Ignore modules, Users will get modules with 'npm install'
+/node_modules

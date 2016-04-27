@@ -1,0 +1,41 @@
+body {
+  background-color: gray;
+} 
+.container {
+/* Center in window */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+/* Move element to center offset */
+/* So it's not center on corner */
+  transform: translate(-50%, -50%);
+}
+.clock-background {
+  background: #000;
+/*Screen 7in 800x480 Pi touchscreen display*/
+/*Viewable screen size: 155mm x 86mm*/
+/*585x325*/
+  width: 580px;
+  height: 320px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+/*font awesome*/
+.fa {
+  color: red;
+}
+
+#digital-clock {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #1e90ff;
+}
+#digital-clock-time {
+  display:inline;
+  font-size: 12.0em;
+}
+#digital-clock-am-pm {
+  display:inline;
+  font-size: 4.0em;
+}

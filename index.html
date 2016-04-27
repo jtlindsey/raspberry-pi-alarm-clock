@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Raspberry Pi Alarm Clock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Raspberry Pi Alarm Clock">
+  <meta name="author" content="J Travis Lindsey">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="clock-background">
+    <div id="digital-clock">
+      <div id="digital-clock-time"></div>
+      <div id="digital-clock-am-pm"></div>
+    </div>
+      
+      <i class="fa fa-bell" aria-hidden="true"></i>
+
+      <div id="buttons">
+         <button type="button" id="btn1">Blue</button> 
+         <button type="button" id="btn2">Silver</button> 
+         <button type="button" id="btn3">Green</button>
+         <button type="button" id="btn4">Red</button>
+         <button type="button" id="my-file">JSON color</button> 
+         <button type="button" id="save">Save</button> 
+      </div>
+    </div>
+  </div>
+  <!-- <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script> -->
+  <!-- Issue: -->
+  <!-- http://stackoverflow.com/questions/32621988/electron-jquery-is-not-defined -->
+  <script>window.$ = window.jQuery = require('./js/jquery-2.2.3.min.js');</script>
+  <script type="text/javascript" src="js/config.js"></script>
+  <script type="text/javascript" src="js/date_time.js"></script>
+  <script type="text/javascript" src="js/buttons.js"></script>
+</body>
+</html>

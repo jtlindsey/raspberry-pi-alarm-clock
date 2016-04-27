@@ -1,0 +1,18 @@
+{
+  "clockColor": "#1e90ff",
+  "yourName": "Travis",
+  "alarm1": [
+    {
+      "sound": "",
+      "activeTime": "",
+      "activeDays": ""
+    }
+  ],
+  "alarm2": [
+    {
+      "sound": "",
+      "activeTime": "",
+      "activeDays": ""
+    }
+  ]
+}
