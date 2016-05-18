@@ -85,5 +85,7 @@ npm install && npm start
 
 ## License
 
-[Click to read License information.](https://github.com/jtlindsey/raspberry-pi-alarm-clock/blob/master/LICENSE "License")
+[Click to read License information.](https://github.com/jtlindsey/raspberry-pi-alarm-clock/blob/master/LICENSE "License")  
 
+
+[![Analytics](https://ga-beacon.appspot.com/UA-77922886-2/raspberry-pi-alarm-clock/readme)](https://github.com/igrigorik/ga-beacon)
