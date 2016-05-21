@@ -1,20 +1,23 @@
+var currentTime, currentHours;
 
 document.body.onload = function() {
-  updateDigitalClockAmPM(); setInterval('updateDigitalClockAmPM()', 1000 );
-  updateDigitalClock(); setInterval('updateDigitalClock()', 1000 );
+  setInterval('getTime()', 1000 );
+  setInterval('updateDigitalClockAmPM(currentTime, currentHours)', 1000 );
+  setInterval('updateDigitalClock(currentTime, currentHours)', 1000 );
   updateAnalogueClock();
 }
 
-function updateDigitalClockAmPM() {
-  var currentTime       = new Date ();
-  var currentHours      = currentTime.getHours();
-  var timeOfDay         = (currentHours < 12) ? "AM" : "PM";
+function getTime() {
+  currentTime   = new Date ();
+  currentHours  = currentTime.getHours();
+}
+
+function updateDigitalClockAmPM(currentTime, currentHours) {
+  var timeOfDay = (currentHours < 12) ? "AM" : "PM";
   document.getElementById("digital-clock-am-pm").innerHTML = " " + timeOfDay;
 }
 
-function updateDigitalClock() {
-  var currentTime       = new Date ();
-  var currentHours      = currentTime.getHours();
+function updateDigitalClock(currentTime, currentHours) {
   var currentMinutes    = currentTime.getMinutes();
 
   currentMinutes        = (currentMinutes < 10 ? "0" : "") + currentMinutes;
@@ -25,6 +28,6 @@ function updateDigitalClock() {
   document.getElementById("digital-clock-time").innerHTML = currentTimeString;
 }
 
-function updateAnalogueClock() {
+function updateAnalogueClock(currentTime, currentHours) {
 
 }
