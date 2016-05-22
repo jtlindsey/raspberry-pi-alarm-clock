@@ -26,5 +26,11 @@ function changeDiv(hideDivID, showDivID) {
     $("#digital-clock").show();
   } else {
     $("#" + showDivID).show();
+    $('.your-class').get(0).slick.setPosition();
   }
 };
+
+// temporary
+$('#change-numbers').on('afterChange', function(event, slick, currentSlide, nextSlide){
+  console.log($(slick.$slides.get(currentSlide)).text());
+});

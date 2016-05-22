@@ -4,7 +4,9 @@ document.body.onload = function() {
   setInterval('getTime()', 1000 );
   setInterval('updateDigitalClockAmPM(currentTime, currentHours)', 1000 );
   setInterval('updateDigitalClock(currentTime, currentHours)', 1000 );
-  updateAnalogueClock();
+  setInterval('getUserAlarmSettings("1")', 60000 );
+  setInterval('getUserAlarmSettings("2")', 60000 );  
+  // updateAnalogueClock();
 }
 
 function getTime() {
@@ -28,6 +30,5 @@ function updateDigitalClock(currentTime, currentHours) {
   document.getElementById("digital-clock-time").innerHTML = currentTimeString;
 }
 
-function updateAnalogueClock(currentTime, currentHours) {
-
-}
+// function updateAnalogueClock(currentTime, currentHours) {
+// }
