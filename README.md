@@ -44,9 +44,9 @@ npm install && npm start
 
 ## Creators
 
-**J Travis Lindsey**
+**J Travis Lindsey** | <a href="http://jtlindsey.com/" target="_blank">jtlindsey.com</a>
 
-* <a href="http://jtlindsey.com/" target="_blank">jtlindsey.com</a>
+
 
 ## License
 
